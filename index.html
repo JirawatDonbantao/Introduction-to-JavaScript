@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมคำนวณรายรับ-รายจ่าย</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><!-- โปรเจคเพื่อส่ง Introduction to JavaScript borntodev -->
+    <div class="container">
+        <h1> โปรแกรมคำนวณรายรับ-รายจ่าย</h1>
+        <p>โปรแกรมนี้ใช้สำหรับคำนวนรายรับรายจ่ายเพื่อแก้ปัญหาของผม</p>
+        <section class ="input">
+            <h2>เพิ่มรายการใหม่</h2>
+            <div class="group">
+                <label for="type">ประเภท:</label>
+                <select id="type">
+                    <option value="income">รายรับ</option>
+                    <option value="expense">รายจ่าย</option>
+                </select>
+            </div>
+            <div class="group">
+                <label for = "amount">จำนวนเงิน:</label>
+                <input type="number" id="amount" placeholder="0">
+            </div>
+            <button id="add">เพิ่มรายการ</button>
+        </section>
+
+        <section class="sum">
+            <h2>สรุปรายรับรายจ่าย</h2>
+            <p>รายรับทั้งหมด: <span id="moneyincme">0</span> บาท</p>
+            <p>รายจ่ายทั้งหมด: <span id="moneyexpense">0</span> บาท</p>
+            <p>ยอดคงเหลือ: <span id="moneybalance">0</span> บาท</p>
+        </section>
+
+        <section class="Alllist">
+            <h2>รายการทั้งหมด</h2>
+            <ul id="List">
+                <!-- รายการจะถูกเพิ่มที่นี่ -->
+            </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
